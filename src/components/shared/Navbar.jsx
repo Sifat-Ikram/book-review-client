@@ -1,19 +1,16 @@
 import { useContext } from "react";
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 
 const Navbar = () => {
   const { logOut, user } = useContext(AuthContext);
-  const navigate = useNavigate();
-  const location = useLocation();
 
   const handleLogout = async () => {
     try {
-      const res = await logOut();
-      console.log(res.user);
-      navigate(location?.state ? location.state : "/");
+      await logOut();
+      window.location.href = "/";
     } catch (err) {
-      console.error(err.message);
+      console.error("Logout failed:", err.message);
     }
   };
   
