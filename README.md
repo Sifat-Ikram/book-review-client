@@ -1,8 +1,29 @@
-# React + Vite
+## How to Clone and Run the Project Locally
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. **Clone the repository**:
+   - Open your terminal or command prompt.
+   - Run the following command to clone the repository:
+     ```bash
+     git clone https://github.com/your-username/your-repo-name.git
 
-Currently, two official plugins are available:
+2. **Navigate to the project directory**:
+   - Use the `cd` command to change into the project folder:
+     ```bash
+     cd your-repo-name
+     ```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3. **Install dependencies**:
+   - Install the required npm packages by running:
+     ```bash
+     npm install
+     ```
+   - This installs all the dependencies listed in the `package.json` file.
+
+4. **Run the project**:
+   - Start the development server with:
+     ```bash
+     npm start
+     ```
+   - Open your browser and navigate to `http://localhost:3000` to see the website.
+
+The app will automatically reload if you make changes to the code.
